@@ -7,13 +7,17 @@ ARCHITECTURE RTL OF uvmRs232Driver IS
                                                                    -- parameters
   signal baudRate_int: real;
   signal baudPeriod, characterPeriod: time;
-  constant uartDataBitNb: positive := 8;
+  constant uartDataBitNb: positive := 9;
   constant maxStringLength: positive := driverTransaction'length;
-                                                                   -- Rx signals
+                                                                   -- Tx signals
   signal outString : string(1 to maxStringLength);
   signal sendString: std_uLogic := '0';
   signal outChar: character;
   signal sendChar: std_ulogic := '0';
+  signal sendParity, parityInit: std_ulogic := '0';
+                                                                        -- debug
+  signal outChar_debug: unsigned(uartDataBitNb-1 downto 0);
+
 
 BEGIN
   ------------------------------------------------------------------------------
@@ -32,6 +36,15 @@ BEGIN
     if commandPart.all = "uart_baud" then
       read(myLine, baudRate_nat);
       baudRate_int <= real(baudRate_nat);
+    elsif commandPart.all = "uart_parity" then
+      sendParity <= '0';
+      parityInit <= '0';
+      if myLine.all = "even" then
+        sendParity <= '1';
+      elsif myLine.all = "odd" then
+        sendParity <= '1';
+        parityInit <= '1';
+      end if;
     elsif commandPart.all = "uart_send" then
       outString <= pad(myLine.all, outString'length);
       sendString <= '1', '0' after 1 ns;
@@ -93,6 +106,16 @@ BEGIN
       character'pos(outChar),
       outChar_unsigned'length
     );
+    outChar_unsigned(outChar_unsigned'high) := '1';
+    if sendParity = '1' then
+      outChar_unsigned(outChar_unsigned'high) := parityInit;
+      for index in uartDataBitNb-2 downto 0 loop
+        outChar_unsigned(outChar_unsigned'high)
+          := outChar_unsigned(outChar_unsigned'high)
+          xor outChar_unsigned(index);
+      end loop;
+    end if;
+    outChar_debug <= outChar_unsigned;
                                                                -- send start bit
     RxD <= '0';
     wait for baudPeriod;
