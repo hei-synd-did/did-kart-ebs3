@@ -41,23 +41,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hdl"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds\\control@registers@controller\\struct.bd.info"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds\\control@registers@controller\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds\\control@registers@controller\\struct.bd.user"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds\\control@registers@controller\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds"
 )
 (vvPair
 variable "appl"
@@ -77,27 +77,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds\\control@registers@controller"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds\\control@registers@controller"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds\\controlRegistersController"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds\\controlRegistersController"
 )
 (vvPair
 variable "date"
-value "05.08.2022"
+value "27.06.2023"
 )
 (vvPair
 variable "day"
-value "ven."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "05"
+value "27"
 )
 (vvPair
 variable "entity_name"
@@ -125,7 +125,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "05.08.2022"
+value "27.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -137,7 +137,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "16:37:12"
+value "11:47:44"
 )
 (vvPair
 variable "group"
@@ -161,7 +161,7 @@ value "$HDS_PROJECT_DIR/../ControlRegisters/work"
 )
 (vvPair
 variable "mm"
-value "08"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -169,19 +169,19 @@ value "controlRegistersController"
 )
 (vvPair
 variable "month"
-value "août"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "août"
+value "juin"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds\\control@registers@controller\\struct.bd"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds\\control@registers@controller\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds\\controlRegistersController\\struct.bd"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds\\controlRegistersController\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -209,7 +209,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "16:37:12"
+value "11:47:44"
 )
 (vvPair
 variable "unit"
@@ -229,11 +229,11 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2022"
+value "2023"
 )
 (vvPair
 variable "yy"
-value "22"
+value "23"
 )
 ]
 )
@@ -724,8 +724,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,4800,41500,5600"
-st "dataIn            : dataRegisterType
-"
+st "dataIn            : dataRegisterType"
 )
 )
 *16 (Net
@@ -743,8 +742,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,2400,40500,3200"
-st "addressIn         : symbolSizeType
-"
+st "addressIn         : symbolSizeType"
 )
 )
 *17 (Net
@@ -762,8 +760,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,5600,38500,6400"
-st "regWr             : std_ulogic
-"
+st "regWr             : std_ulogic"
 )
 )
 *18 (PortIoIn
@@ -871,8 +868,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,3200,38500,4000"
-st "clock             : std_ulogic
-"
+st "clock             : std_ulogic"
 )
 )
 *21 (Net
@@ -890,8 +886,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,6400,38500,7200"
-st "reset             : std_ulogic
-"
+st "reset             : std_ulogic"
 )
 )
 *22 (PortIoOut
@@ -953,8 +948,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,11200,41500,12000"
-st "hardwareControl   : dataRegisterType
-"
+st "hardwareControl   : dataRegisterType"
 )
 )
 *24 (PortIoOut
@@ -1152,8 +1146,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,8800,40500,9600"
-st "cregAddressToSend : symbolSizeType
-"
+st "cregAddressToSend : symbolSizeType"
 )
 )
 *29 (PortIoOut
@@ -1215,8 +1208,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,8000,41500,8800"
-st "bleStatus         : dataRegisterType
-"
+st "bleStatus         : dataRegisterType"
 )
 )
 *31 (Net
@@ -1234,8 +1226,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,9600,41500,10400"
-st "cregDataToSend    : dataRegisterType
-"
+st "cregDataToSend    : dataRegisterType"
 )
 )
 *32 (Net
@@ -1253,8 +1244,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,10400,38500,11200"
-st "cregSendRequest   : std_ulogic
-"
+st "cregSendRequest   : std_ulogic"
 )
 )
 *33 (Net
@@ -1272,8 +1262,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,4000,38500,4800"
-st "cregSendAuth      : std_ulogic
-"
+st "cregSendAuth      : std_ulogic"
 )
 )
 *34 (PortIoIn
@@ -1335,8 +1324,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,7200,38500,8000"
-st "stepperEnd        : std_ulogic
-"
+st "stepperEnd        : std_ulogic"
 )
 )
 *36 (SaComponent
@@ -2316,7 +2304,7 @@ on &35
 bg "65535,65535,65535"
 grid (Grid
 origin "0,0"
-isVisible 1
+isVisible 0
 isActive 1
 xSpacing 1000
 xySpacing 1000
@@ -2425,12 +2413,32 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "1912,-8,3848,1058"
-viewArea "-1700,300,100780,56580"
+windowSize "-8,-8,1928,1048"
+viewArea "-1381,-1492,95902,51365"
 cachedDiagramExtent "0,0,94000,45900"
+pageSetupInfo (PageSetupInfo
+ptrCmd ""
+toPrinter 1
+xMargin 49
+yMargin 49
+paperWidth 761
+paperHeight 1077
+windowsPaperWidth 761
+windowsPaperHeight 1077
+paperType "A4 (210 x 297 mm)"
+windowsPaperName "A4 (210 x 297 mm)"
+windowsPaperType 9
+useAdjustTo 0
+exportedDirectories [
+"$HDS_PROJECT_DIR/HTMLExport"
+]
+boundaryWidth 0
+exportStdIncludeRefs 1
+exportStdPackageRefs 1
+)
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 990,0
+lastUid 1013,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

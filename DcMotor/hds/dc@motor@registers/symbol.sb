@@ -561,23 +561,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\DcMotor\\hdl"
+value "C:\\dev\\did-kart\\Prefs\\..\\DcMotor\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\DcMotor\\hds"
+value "C:\\dev\\did-kart\\Prefs\\..\\DcMotor\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\DcMotor\\hds\\dc@motor@registers\\symbol.sb.info"
+value "C:\\dev\\did-kart\\Prefs\\..\\DcMotor\\hds\\dc@motor@registers\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\DcMotor\\hds\\dc@motor@registers\\symbol.sb.user"
+value "C:\\dev\\did-kart\\Prefs\\..\\DcMotor\\hds\\dc@motor@registers\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\DcMotor\\hds"
+value "C:\\dev\\did-kart\\Prefs\\..\\DcMotor\\hds"
 )
 (vvPair
 variable "appl"
@@ -597,27 +597,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\DcMotor\\hds\\dc@motor@registers"
+value "C:\\dev\\did-kart\\Prefs\\..\\DcMotor\\hds\\dc@motor@registers"
 )
 (vvPair
 variable "d_logical"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\DcMotor\\hds\\dcMotorRegisters"
+value "C:\\dev\\did-kart\\Prefs\\..\\DcMotor\\hds\\dcMotorRegisters"
 )
 (vvPair
 variable "date"
-value "18.08.2022"
+value "27.06.2023"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "18"
+value "27"
 )
 (vvPair
 variable "entity_name"
@@ -645,7 +645,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "18.08.2022"
+value "27.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -653,11 +653,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE2330805"
+value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:14:02"
+value "11:40:27"
 )
 (vvPair
 variable "group"
@@ -665,7 +665,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE2330805"
+value "WE7860"
 )
 (vvPair
 variable "language"
@@ -681,7 +681,7 @@ value "$HDS_PROJECT_DIR/../DcMotor/work"
 )
 (vvPair
 variable "mm"
-value "08"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -689,19 +689,19 @@ value "dcMotorRegisters"
 )
 (vvPair
 variable "month"
-value "août"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "août"
+value "juin"
 )
 (vvPair
 variable "p"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\DcMotor\\hds\\dc@motor@registers\\symbol.sb"
+value "C:\\dev\\did-kart\\Prefs\\..\\DcMotor\\hds\\dc@motor@registers\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\DcMotor\\hds\\dcMotorRegisters\\symbol.sb"
+value "C:\\dev\\did-kart\\Prefs\\..\\DcMotor\\hds\\dcMotorRegisters\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -729,7 +729,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "13:14:02"
+value "11:40:27"
 )
 (vvPair
 variable "unit"
@@ -749,11 +749,11 @@ value "symbol"
 )
 (vvPair
 variable "year"
-value "2022"
+value "2023"
 )
 (vvPair
 variable "yy"
-value "22"
+value "23"
 )
 ]
 )
@@ -1985,7 +1985,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 3676,0
+lastUid 3699,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"

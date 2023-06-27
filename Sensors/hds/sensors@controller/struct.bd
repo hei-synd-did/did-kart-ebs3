@@ -125,23 +125,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hdl"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds\\sensors@controller\\struct.bd.info"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\sensors@controller\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds\\sensors@controller\\struct.bd.user"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\sensors@controller\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds"
 )
 (vvPair
 variable "appl"
@@ -161,27 +161,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds\\sensors@controller"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\sensors@controller"
 )
 (vvPair
 variable "d_logical"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds\\sensorsController"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\sensorsController"
 )
 (vvPair
 variable "date"
-value "22.08.2022"
+value "27.06.2023"
 )
 (vvPair
 variable "day"
-value "lun."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "lundi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "22"
+value "27"
 )
 (vvPair
 variable "entity_name"
@@ -209,7 +209,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "22.08.2022"
+value "27.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -217,11 +217,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE2330805"
+value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "18:20:09"
+value "11:43:08"
 )
 (vvPair
 variable "group"
@@ -229,7 +229,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE2330805"
+value "WE7860"
 )
 (vvPair
 variable "language"
@@ -245,7 +245,7 @@ value "$HDS_PROJECT_DIR/../Sensors/work"
 )
 (vvPair
 variable "mm"
-value "08"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -253,19 +253,19 @@ value "sensorsController"
 )
 (vvPair
 variable "month"
-value "août"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "août"
+value "juin"
 )
 (vvPair
 variable "p"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds\\sensors@controller\\struct.bd"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\sensors@controller\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds\\sensorsController\\struct.bd"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\sensorsController\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -293,7 +293,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "18:20:09"
+value "11:43:08"
 )
 (vvPair
 variable "unit"
@@ -313,11 +313,11 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2022"
+value "2023"
 )
 (vvPair
 variable "yy"
-value "22"
+value "23"
 )
 ]
 )
@@ -5362,7 +5362,7 @@ on &15
 bg "65535,65535,65535"
 grid (Grid
 origin "0,0"
-isVisible 1
+isVisible 0
 isActive 1
 xSpacing 1000
 xySpacing 1000
@@ -5473,12 +5473,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1921,1066"
-viewArea "-2205,-2335,224171,123088"
+windowSize "-8,-8,1928,1048"
+viewArea "-2202,-2332,225884,121593"
 cachedDiagramExtent "0,0,150000,121000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 6061,0
+lastUid 6134,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

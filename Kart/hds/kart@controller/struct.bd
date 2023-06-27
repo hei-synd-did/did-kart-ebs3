@@ -182,23 +182,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Kart\\hdl"
+value "C:\\dev\\did-kart\\Prefs\\..\\Kart\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Kart\\hds"
+value "C:\\dev\\did-kart\\Prefs\\..\\Kart\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Kart\\hds\\kart@controller\\struct.bd.info"
+value "C:\\dev\\did-kart\\Prefs\\..\\Kart\\hds\\kart@controller\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Kart\\hds\\kart@controller\\struct.bd.user"
+value "C:\\dev\\did-kart\\Prefs\\..\\Kart\\hds\\kart@controller\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Kart\\hds"
+value "C:\\dev\\did-kart\\Prefs\\..\\Kart\\hds"
 )
 (vvPair
 variable "appl"
@@ -218,27 +218,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Kart\\hds\\kart@controller"
+value "C:\\dev\\did-kart\\Prefs\\..\\Kart\\hds\\kart@controller"
 )
 (vvPair
 variable "d_logical"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Kart\\hds\\kartController"
+value "C:\\dev\\did-kart\\Prefs\\..\\Kart\\hds\\kartController"
 )
 (vvPair
 variable "date"
-value "22.08.2022"
+value "27.06.2023"
 )
 (vvPair
 variable "day"
-value "lun."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "lundi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "22"
+value "27"
 )
 (vvPair
 variable "entity_name"
@@ -266,7 +266,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "22.08.2022"
+value "27.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -274,11 +274,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE2330805"
+value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "18:19:13"
+value "11:42:43"
 )
 (vvPair
 variable "group"
@@ -286,7 +286,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE2330805"
+value "WE7860"
 )
 (vvPair
 variable "language"
@@ -306,7 +306,7 @@ value "$SCRATCH_DIR/Kart/Kart/work"
 )
 (vvPair
 variable "mm"
-value "08"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -314,19 +314,19 @@ value "kartController"
 )
 (vvPair
 variable "month"
-value "août"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "août"
+value "juin"
 )
 (vvPair
 variable "p"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Kart\\hds\\kart@controller\\struct.bd"
+value "C:\\dev\\did-kart\\Prefs\\..\\Kart\\hds\\kart@controller\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Kart\\hds\\kartController\\struct.bd"
+value "C:\\dev\\did-kart\\Prefs\\..\\Kart\\hds\\kartController\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -354,7 +354,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "18:19:13"
+value "11:42:43"
 )
 (vvPair
 variable "unit"
@@ -374,11 +374,11 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2022"
+value "2023"
 )
 (vvPair
 variable "yy"
-value "22"
+value "23"
 )
 ]
 )
@@ -407,7 +407,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "57200,4000,68700,5000"
+xt "57200,4000,68500,5000"
 st "
 by %user on %dd %month %year
 "
@@ -10562,7 +10562,7 @@ on &230
 bg "65535,65535,65535"
 grid (Grid
 origin "0,0"
-isVisible 1
+isVisible 0
 isActive 1
 xSpacing 1000
 xySpacing 1000
@@ -10677,12 +10677,32 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-8,-8,1928,1058"
-viewArea "-4281,-4452,297230,161132"
+windowSize "0,0,1921,1066"
+viewArea "-4325,-4498,297640,162805"
 cachedDiagramExtent "0,0,292000,143200"
+pageSetupInfo (PageSetupInfo
+ptrCmd ""
+toPrinter 1
+xMargin 49
+yMargin 49
+paperWidth 761
+paperHeight 1077
+windowsPaperWidth 761
+windowsPaperHeight 1077
+paperType "A4 (210 x 297 mm)"
+windowsPaperName "A4 (210 x 297 mm)"
+windowsPaperType 9
+useAdjustTo 0
+exportedDirectories [
+"$HDS_PROJECT_DIR/HTMLExport"
+]
+boundaryWidth 0
+exportStdIncludeRefs 1
+exportStdPackageRefs 1
+)
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 10293,0
+lastUid 10547,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

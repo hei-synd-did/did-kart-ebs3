@@ -55,23 +55,23 @@ value " "
 )
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hdl"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds\\hall@counters\\student@version.bd.info"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\hall@counters\\student@version.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds\\hall@counters\\student@version.bd.user"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\hall@counters\\student@version.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds"
 )
 (vvPair
 variable "appl"
@@ -91,27 +91,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds\\hall@counters"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\hall@counters"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds\\hallCounters"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\hallCounters"
 )
 (vvPair
 variable "date"
-value "22.08.2022"
+value "27.06.2023"
 )
 (vvPair
 variable "day"
-value "lun."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "lundi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "22"
+value "27"
 )
 (vvPair
 variable "designName"
@@ -143,7 +143,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "22.08.2022"
+value "27.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -155,7 +155,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:32:31"
+value "11:43:48"
 )
 (vvPair
 variable "group"
@@ -195,7 +195,7 @@ value "D:\\Users\\Syslo\\Kart\\generic"
 )
 (vvPair
 variable "mm"
-value "08"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -203,19 +203,19 @@ value "hallCounters"
 )
 (vvPair
 variable "month"
-value "août"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "août"
+value "juin"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds\\hall@counters\\student@version.bd"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\hall@counters\\student@version.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Sensors\\hds\\hallCounters\\studentVersion.bd"
+value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\hallCounters\\studentVersion.bd"
 )
 (vvPair
 variable "package_name"
@@ -295,7 +295,7 @@ value "studentVersion"
 )
 (vvPair
 variable "time"
-value "13:32:31"
+value "11:43:48"
 )
 (vvPair
 variable "unit"
@@ -315,11 +315,11 @@ value "studentVersion"
 )
 (vvPair
 variable "year"
-value "2022"
+value "2023"
 )
 (vvPair
 variable "yy"
-value "22"
+value "23"
 )
 ]
 )
@@ -385,8 +385,7 @@ va (VaSet
 font "Verdana,8,0"
 )
 xt "-1000,10200,9300,11200"
-st "clock       : std_ulogic
-"
+st "clock       : std_ulogic"
 )
 )
 *3 (PortIoIn
@@ -448,8 +447,7 @@ va (VaSet
 font "Verdana,8,0"
 )
 xt "-1000,12200,9300,13200"
-st "reset       : std_ulogic
-"
+st "reset       : std_ulogic"
 )
 )
 *5 (Grouping
@@ -826,8 +824,7 @@ va (VaSet
 font "Verdana,8,0"
 )
 xt "-1000,15200,23900,16200"
-st "position    : unsigned(sensorNb*countBitNb-1 downto 0)
-"
+st "position    : unsigned(sensorNb*countBitNb-1 downto 0)"
 )
 )
 *18 (PortIoIn
@@ -890,8 +887,7 @@ va (VaSet
 font "Verdana,8,0"
 )
 xt "-1000,13200,27600,14200"
-st "zeroPos     : std_ulogic_vector(SENS_hallSensorNb-1 DOWNTO 0)
-"
+st "zeroPos     : std_ulogic_vector(SENS_hallSensorNb-1 DOWNTO 0)"
 )
 )
 *20 (PortIoIn
@@ -954,8 +950,7 @@ va (VaSet
 font "Verdana,8,0"
 )
 xt "-1000,11200,19600,12200"
-st "hallPulses  : std_ulogic_vector(1 to sensorNb)
-"
+st "hallPulses  : std_ulogic_vector(1 to sensorNb)"
 )
 )
 *22 (PortIoOut
@@ -1017,8 +1012,7 @@ va (VaSet
 font "Verdana,8,0"
 )
 xt "-1000,14200,20400,15200"
-st "hallChanged : std_ulogic_vector(1 to sensorNb)
-"
+st "hallChanged : std_ulogic_vector(1 to sensorNb)"
 )
 )
 *24 (SaComponent
@@ -1467,7 +1461,7 @@ on &23
 bg "65535,65535,65535"
 grid (Grid
 origin "0,0"
-isVisible 1
+isVisible 0
 isActive 1
 xSpacing 1000
 xySpacing 1000
@@ -1575,11 +1569,11 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "1920,0,3841,1066"
-viewArea "4314,4795,112666,64827"
+windowSize "-8,-8,1928,1048"
+viewArea "-4459,-1605,102431,56471"
 cachedDiagramExtent "-3000,0,97500,55000"
 pageSetupInfo (PageSetupInfo
-ptrCmd "\\\\SUN\\PREA309_HPLJ3005DN.PRINTERS.SYSTEM.SION.HEVs,winspool,"
+ptrCmd "\\\\vmenpprint1.hevs.ch\\VS-FOLLOWME-PRN,winspool,"
 fileName "\\\\EIV\\a309_hplj4050.electro.eiv"
 toPrinter 1
 xMargin 48
@@ -1588,10 +1582,11 @@ paperWidth 761
 paperHeight 1077
 windowsPaperWidth 761
 windowsPaperHeight 1077
-paperType "A4"
-windowsPaperName "A4"
+paperType "A4 (210 x 297 mm)"
+windowsPaperName "A4 (210 x 297 mm)"
 windowsPaperType 9
 scale 75
+useAdjustTo 0
 exportedDirectories [
 "$HDS_PROJECT_DIR/HTMLExport"
 ]
@@ -1599,7 +1594,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-3000,0"
-lastUid 1741,0
+lastUid 1774,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

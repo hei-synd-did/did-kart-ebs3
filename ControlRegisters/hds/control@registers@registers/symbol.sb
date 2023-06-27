@@ -566,23 +566,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hdl"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds\\control@registers@registers\\symbol.sb.info"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds\\control@registers@registers\\symbol.sb.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds\\control@registers@registers\\symbol.sb.user"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds\\control@registers@registers\\symbol.sb.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds"
 )
 (vvPair
 variable "appl"
@@ -602,27 +602,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds\\control@registers@registers"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds\\control@registers@registers"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds\\controlRegistersRegisters"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds\\controlRegistersRegisters"
 )
 (vvPair
 variable "date"
-value "05.08.2022"
+value "27.06.2023"
 )
 (vvPair
 variable "day"
-value "ven."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "vendredi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "05"
+value "27"
 )
 (vvPair
 variable "entity_name"
@@ -650,7 +650,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "05.08.2022"
+value "27.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -662,7 +662,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "17:31:36"
+value "11:47:57"
 )
 (vvPair
 variable "group"
@@ -686,7 +686,7 @@ value "$HDS_PROJECT_DIR/../ControlRegisters/work"
 )
 (vvPair
 variable "mm"
-value "08"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -694,19 +694,19 @@ value "controlRegistersRegisters"
 )
 (vvPair
 variable "month"
-value "août"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "août"
+value "juin"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds\\control@registers@registers\\symbol.sb"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds\\control@registers@registers\\symbol.sb"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\ControlRegisters\\hds\\controlRegistersRegisters\\symbol.sb"
+value "C:\\dev\\did-kart\\Prefs\\..\\ControlRegisters\\hds\\controlRegistersRegisters\\symbol.sb"
 )
 (vvPair
 variable "package_name"
@@ -734,7 +734,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "17:31:36"
+value "11:47:57"
 )
 (vvPair
 variable "unit"
@@ -754,11 +754,11 @@ value "symbol"
 )
 (vvPair
 variable "year"
-value "2022"
+value "2023"
 )
 (vvPair
 variable "yy"
-value "22"
+value "23"
 )
 ]
 )
@@ -2028,7 +2028,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 787,0
+lastUid 810,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol:CDM"

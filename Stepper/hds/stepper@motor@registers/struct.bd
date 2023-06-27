@@ -150,23 +150,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hdl"
+value "C:\\dev\\did-kart\\Prefs\\..\\Stepper\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds"
+value "C:\\dev\\did-kart\\Prefs\\..\\Stepper\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds\\stepper@motor@registers\\struct.bd.info"
+value "C:\\dev\\did-kart\\Prefs\\..\\Stepper\\hds\\stepper@motor@registers\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds\\stepper@motor@registers\\struct.bd.user"
+value "C:\\dev\\did-kart\\Prefs\\..\\Stepper\\hds\\stepper@motor@registers\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds"
+value "C:\\dev\\did-kart\\Prefs\\..\\Stepper\\hds"
 )
 (vvPair
 variable "appl"
@@ -186,27 +186,27 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds\\stepper@motor@registers"
+value "C:\\dev\\did-kart\\Prefs\\..\\Stepper\\hds\\stepper@motor@registers"
 )
 (vvPair
 variable "d_logical"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds\\stepperMotorRegisters"
+value "C:\\dev\\did-kart\\Prefs\\..\\Stepper\\hds\\stepperMotorRegisters"
 )
 (vvPair
 variable "date"
-value "18.08.2022"
+value "27.06.2023"
 )
 (vvPair
 variable "day"
-value "jeu."
+value "mar."
 )
 (vvPair
 variable "day_long"
-value "jeudi"
+value "mardi"
 )
 (vvPair
 variable "dd"
-value "18"
+value "27"
 )
 (vvPair
 variable "entity_name"
@@ -234,7 +234,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "18.08.2022"
+value "27.06.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -242,11 +242,11 @@ value "UNKNOWN"
 )
 (vvPair
 variable "graphical_source_host"
-value "WE2330805"
+value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:15:33"
+value "11:46:55"
 )
 (vvPair
 variable "group"
@@ -254,7 +254,7 @@ value "UNKNOWN"
 )
 (vvPair
 variable "host"
-value "WE2330805"
+value "WE7860"
 )
 (vvPair
 variable "language"
@@ -274,7 +274,7 @@ value "$HDS_PROJECT_DIR/../Stepper/work"
 )
 (vvPair
 variable "mm"
-value "08"
+value "06"
 )
 (vvPair
 variable "module_name"
@@ -282,19 +282,19 @@ value "stepperMotorRegisters"
 )
 (vvPair
 variable "month"
-value "août"
+value "juin"
 )
 (vvPair
 variable "month_long"
-value "août"
+value "juin"
 )
 (vvPair
 variable "p"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds\\stepper@motor@registers\\struct.bd"
+value "C:\\dev\\did-kart\\Prefs\\..\\Stepper\\hds\\stepper@motor@registers\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds\\stepperMotorRegisters\\struct.bd"
+value "C:\\dev\\did-kart\\Prefs\\..\\Stepper\\hds\\stepperMotorRegisters\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -322,7 +322,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "13:15:33"
+value "11:46:55"
 )
 (vvPair
 variable "unit"
@@ -342,11 +342,11 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2022"
+value "2023"
 )
 (vvPair
 variable "yy"
-value "22"
+value "23"
 )
 ]
 )
@@ -375,7 +375,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "62200,4000,73500,5000"
+xt "62200,4000,73700,5000"
 st "
 by %user on %dd %month %year
 "
@@ -5611,7 +5611,7 @@ on &125
 bg "65535,65535,65535"
 grid (Grid
 origin "0,0"
-isVisible 1
+isVisible 0
 isActive 1
 xSpacing 1000
 xySpacing 1000
@@ -5722,12 +5722,32 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-8,-8,1928,1058"
-viewArea "-2299,-2403,183612,99695"
+windowSize "0,0,1921,1066"
+viewArea "-2301,-2406,182170,99800"
 cachedDiagramExtent "0,0,153700,97800"
+pageSetupInfo (PageSetupInfo
+ptrCmd ""
+toPrinter 1
+xMargin 49
+yMargin 49
+paperWidth 761
+paperHeight 1077
+windowsPaperWidth 761
+windowsPaperHeight 1077
+paperType "A4 (210 x 297 mm)"
+windowsPaperName "A4 (210 x 297 mm)"
+windowsPaperType 9
+useAdjustTo 0
+exportedDirectories [
+"$HDS_PROJECT_DIR/HTMLExport"
+]
+boundaryWidth 0
+exportStdIncludeRefs 1
+exportStdPackageRefs 1
+)
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 4439,0
+lastUid 4526,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
