@@ -1229,6 +1229,7 @@ projectPaths [
 "C:\\dev\\eln_kart_sodimm200\\Prefs\\hds.hdp"
 "C:\\Users\\axel.amand\\Desktop\\eln_kart_sodimm200\\Prefs\\hds.hdp"
 "C:\\dev\\did-kart\\Prefs\\hds.hdp"
+"C:\\dev\\DiD\\did-kart\\Prefs\\hds.hdp"
 ]
 libMappingsRootDir "$HDS_PROJECT_DIR/../"
 teamLibMappingsRootDir ""
