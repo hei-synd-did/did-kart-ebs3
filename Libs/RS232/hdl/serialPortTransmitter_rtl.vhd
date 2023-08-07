@@ -1,3 +1,38 @@
+--===========================================================================--
+--  Design units : CoCa.serialPortTransmitter.rtl
+--
+--  File name : serialPortTransmitter.vhd
+--
+--  Purpose : Transmit a 8 bit data word over a serial line
+--            add start and stop bits
+--
+--  Note : This model can be synthesized by Xilinx ISE.
+--
+--  Limitations : 
+--        The code send 2 stop bits.
+--  
+--
+--  Errors: : None known
+--
+--  Library : Common
+--
+--  Dependencies : None
+--
+--  Author : 
+--  Haute école d'ingénierie (HEI/HES-SO)
+--  Institut systèmes industriels (ISI)
+--  Rue de l'industrie 23
+--  1950 Sion
+--  Switzerland (CH)
+--
+--  Simulator : Mentor ModelSim V10.7c
+------------------------------------------------
+--  Revision list
+--  Version Author Date Changes
+--
+--  V1.0 04.04.2022 - First version
+--===========================================================================--
+
 library Common;
   use Common.CommonLib.all;
 
