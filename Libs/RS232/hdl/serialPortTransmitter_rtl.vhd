@@ -1,3 +1,38 @@
+--===========================================================================--
+--  Design units : CoCa.serialPortTransmitter.rtl
+--
+--  File name : serialPortTransmitter.vhd
+--
+--  Purpose : Transmit a 8 bit data word over a serial line
+--            add start and stop bits
+--
+--  Note : This model can be synthesized by Xilinx ISE.
+--
+--  Limitations : 
+--        The code send 2 stop bits.
+--  
+--
+--  Errors: : None known
+--
+--  Library : Common
+--
+--  Dependencies : None
+--
+--  Author : 
+--  Haute école d'ingénierie (HEI/HES-SO)
+--  Institut systèmes industriels (ISI)
+--  Rue de l'industrie 23
+--  1950 Sion
+--  Switzerland (CH)
+--
+--  Simulator : Mentor ModelSim V10.7c
+------------------------------------------------
+--  Revision list
+--  Version Author Date Changes
+--
+--  V1.0 04.04.2022 - First version
+--===========================================================================--
+
 library Common;
   use Common.CommonLib.all;
 
@@ -8,7 +43,7 @@ architecture RTL of serialPortTransmitter is
   signal txData: std_ulogic_vector(dataBitNb-1 downto 0);
   signal send1: std_uLogic;
   signal txShiftEnable: std_uLogic;
-  signal txShiftReg: std_ulogic_vector(dataBitNb+1 downto 0);
+  signal txShiftReg: std_ulogic_vector(dataBitNb+2 downto 0);
   signal txSendingByte: std_uLogic;
   signal txSendingByteAndStop: std_uLogic;
 
@@ -67,7 +102,7 @@ begin
     elsif rising_edge(clock) then
       if txShiftEnable = '1' then
         if send1 = '1' then
-          txShiftReg <= '0' & txData & '0';
+          txShiftReg <= "00" & txData & '0'; -- 2 stop, data, 1 start
         else
           txShiftReg(txShiftReg'high-1 downto 0) <= txShiftReg(txShiftReg'high downto 1);
           txShiftReg(txShiftReg'high) <= '1';
@@ -76,7 +111,9 @@ begin
     end if;
   end process shiftReg;
 
-  txSendingByte <= '1' when (txShiftReg(txShiftReg'high downto 1) /= (txShiftReg'high downto 1 => '1'))
+  -- As the shift register is filled with '1' when shift occurs, the send is over when it is full of '1'
+  -- The 2 stop bits are set to 0 ensure that this works event for a data=FF
+  txSendingByte <= '1' when (txShiftReg(txShiftReg'high downto 2) /= (txShiftReg'high downto 2 => '1'))
     else '0';
 
   txSendingByteAndStop <= '1' when txShiftReg /= (txShiftReg'high downto 0 => '1')

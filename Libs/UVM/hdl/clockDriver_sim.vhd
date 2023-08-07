@@ -5,7 +5,7 @@ LIBRARY Common_test;
 
 ARCHITECTURE RTL OF clockDriver IS
                                                                    -- parameters
-  signal clockFrequency : real;
+  signal clockFrequency : real := 40000000.0;
   signal clockPeriod: time := 10 ns;
   signal clock_int: std_ulogic := '1';
 
@@ -37,8 +37,10 @@ BEGIN
   driveReset: process
   begin
     reset <= '1';
-    wait until clockPeriod'event;
-    wait until clockPeriod'event;
+
+    wait until clock_int'event;
+    wait until clock_int'event;
+    
     reset <= '0' after 2*clockPeriod;
     wait;
   end process driveReset;

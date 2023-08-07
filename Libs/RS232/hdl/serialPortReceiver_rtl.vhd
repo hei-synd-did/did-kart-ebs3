@@ -1,3 +1,42 @@
+--===========================================================================--
+--  Design units : CoCa.serialPortReceiver.rtl
+--
+--  File name : serialPortReceiver_rtl.vhd
+--
+--  Purpose : Decode data from UART into words
+--
+--  Input : serial line data
+--
+--  Output : 
+--      dataOut : word of data
+--      dataValid : active when a new word of data is available
+--
+--
+--  Limitations : 
+--  
+--  
+--
+--  Errors: : None known
+--
+--  Library : Common
+--
+--  Dependencies : None
+--
+--  Author : 
+--  Haute école d'ingénierie (HEI/HES-SO)
+--  Institut systèmes industriels (ISI)
+--  Rue de l'industrie 23
+--  1950 Sion
+--  Switzerland (CH)
+--
+--  Simulator : Mentor ModelSim V10.7c
+------------------------------------------------
+--  Revision list
+--  Version Author Date Changes
+--
+--  V1.0 04.04.2022 - First version
+--===========================================================================--
+
 library Common;
   use Common.CommonLib.all;
 
