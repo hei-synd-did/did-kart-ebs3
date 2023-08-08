@@ -6,10 +6,9 @@
 --  Purpose : Transmit a 8 bit data word over a serial line
 --            add start and stop bits
 --
---  Note : This model can be synthesized by Xilinx ISE.
+--  Parameters : dataBitNb : number of data bits
+--               stopBitNb : number of stop bits
 --
---  Limitations : 
---        The code send 2 stop bits.
 --  
 --
 --  Errors: : None known
