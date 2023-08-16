@@ -18,8 +18,8 @@
 --  Dependencies : None
 --
 --  Author : 
---  Haute école d'ingénierie (HEI/HES-SO)
---  Institut systèmes industriels (ISI)
+--  Haute ecole d'ingenierie (HEI/HES-SO)
+--  Institut systemes industriels (ISI)
 --  Rue de l'industrie 23
 --  1950 Sion
 --  Switzerland (CH)

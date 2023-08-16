@@ -5,9 +5,11 @@ LIBRARY Common_test;
 
 ARCHITECTURE RTL OF clockDriver IS
                                                                    -- parameters
-  signal clockFrequency : real := 40000000.0;
-  signal clockPeriod: time := 10 ns;
+  constant clockPeriodInit: time := 2 ns;
+  signal clockFrequency : real;
+  signal clockPeriod: time := clockPeriodInit;
   signal clock_int: std_ulogic := '1';
+  signal reset_int: std_ulogic := '0';
 
 BEGIN
   ------------------------------------------------------------------------------
@@ -17,17 +19,20 @@ BEGIN
     variable commandPart : line;
     variable frequency_nat : natural;
   begin
+    reset_int <= '0';
     write(myLine, driverTransaction);
     rm_side_separators(myLine);
     read_first(myLine, commandPart);
     if commandPart.all = "clock_frequency" then
       read(myLine, frequency_nat);
       clockFrequency <= real(frequency_nat);
+    elsif commandPart.all = "reset" then
+      reset_int <= '1';
     end if;
     deallocate(myLine);
   end process interpretTransaction;
 
-  clockPeriod <= 1.0/clockFrequency * 1 sec;
+  clockPeriod <= 1.0/clockFrequency * 1 sec when clockFrequency > 0.0;
 
   --============================================================================
                                                                         -- clock
@@ -37,12 +42,12 @@ BEGIN
   driveReset: process
   begin
     reset <= '1';
-
-    wait until clock_int'event;
-    wait until clock_int'event;
-    
-    reset <= '0' after 2*clockPeriod;
-    wait;
+    while clockPeriod = clockPeriodInit loop
+      wait until clockPeriod'event;
+    end loop;
+    wait for 2*clockPeriod;
+    reset <= '0';
+    wait until rising_edge(reset_int);
   end process driveReset;
 
 END ARCHITECTURE RTL;
