@@ -93,6 +93,9 @@ BEGIN
         " at time " & integer'image(now/1 us) & " us" &
         lf & lf
       );
+	  
+      wait for 8*clockperiod;
+
       readReg(hallBaseRDAddr);
       sensorsSendAuth <= '0';
       wait until sensorsSendRequest = '1';
