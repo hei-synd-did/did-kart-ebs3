@@ -125,23 +125,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hdl"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Sensors\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Sensors\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\sensors@controller\\struct.bd.info"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Sensors\\hds\\sensors@controller\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\sensors@controller\\struct.bd.user"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Sensors\\hds\\sensors@controller\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Sensors\\hds"
 )
 (vvPair
 variable "appl"
@@ -161,15 +161,15 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\sensors@controller"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Sensors\\hds\\sensors@controller"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\sensorsController"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Sensors\\hds\\sensorsController"
 )
 (vvPair
 variable "date"
-value "27.06.2023"
+value "12.09.2023"
 )
 (vvPair
 variable "day"
@@ -181,7 +181,7 @@ value "mardi"
 )
 (vvPair
 variable "dd"
-value "27"
+value "12"
 )
 (vvPair
 variable "entity_name"
@@ -209,7 +209,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "27.06.2023"
+value "12.09.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -221,7 +221,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "11:43:08"
+value "08:29:06"
 )
 (vvPair
 variable "group"
@@ -245,7 +245,7 @@ value "$HDS_PROJECT_DIR/../Sensors/work"
 )
 (vvPair
 variable "mm"
-value "06"
+value "09"
 )
 (vvPair
 variable "module_name"
@@ -253,19 +253,19 @@ value "sensorsController"
 )
 (vvPair
 variable "month"
-value "juin"
+value "sept."
 )
 (vvPair
 variable "month_long"
-value "juin"
+value "septembre"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\sensors@controller\\struct.bd"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Sensors\\hds\\sensors@controller\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\did-kart\\Prefs\\..\\Sensors\\hds\\sensorsController\\struct.bd"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Sensors\\hds\\sensorsController\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -293,7 +293,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "11:43:08"
+value "08:29:06"
 )
 (vvPair
 variable "unit"
@@ -346,7 +346,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Arial,8,0"
 )
-xt "55200,4000,66700,5000"
+xt "55200,4000,66900,5000"
 st "
 by %user on %dd %month %year
 "
@@ -5473,12 +5473,32 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-8,-8,1928,1048"
-viewArea "-2202,-2332,225884,121593"
+windowSize "-8,-8,1928,1040"
+viewArea "-2246,-2378,230360,122913"
 cachedDiagramExtent "0,0,150000,121000"
+pageSetupInfo (PageSetupInfo
+ptrCmd ""
+toPrinter 1
+xMargin 49
+yMargin 49
+paperWidth 761
+paperHeight 1077
+windowsPaperWidth 761
+windowsPaperHeight 1077
+paperType "A4 (210 x 297 mm)"
+windowsPaperName "A4 (210 x 297 mm)"
+windowsPaperType 9
+useAdjustTo 0
+exportedDirectories [
+"$HDS_PROJECT_DIR/HTMLExport"
+]
+boundaryWidth 0
+exportStdIncludeRefs 1
+exportStdPackageRefs 1
+)
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 6134,0
+lastUid 6280,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

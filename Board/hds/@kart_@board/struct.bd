@@ -343,23 +343,23 @@ value " "
 )
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\did-kart\\Prefs\\..\\Board\\hdl"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Board\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\did-kart\\Prefs\\..\\Board\\hds"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Board\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\did-kart\\Prefs\\..\\Board\\hds\\@kart_@board\\struct.bd.info"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Board\\hds\\@kart_@board\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\did-kart\\Prefs\\..\\Board\\hds\\@kart_@board\\struct.bd.user"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Board\\hds\\@kart_@board\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\did-kart\\Prefs\\..\\Board\\hds"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Board\\hds"
 )
 (vvPair
 variable "appl"
@@ -379,15 +379,15 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\did-kart\\Prefs\\..\\Board\\hds\\@kart_@board"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Board\\hds\\@kart_@board"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\did-kart\\Prefs\\..\\Board\\hds\\Kart_Board"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Board\\hds\\Kart_Board"
 )
 (vvPair
 variable "date"
-value "27.06.2023"
+value "12.09.2023"
 )
 (vvPair
 variable "day"
@@ -399,7 +399,7 @@ value "mardi"
 )
 (vvPair
 variable "dd"
-value "27"
+value "12"
 )
 (vvPair
 variable "designName"
@@ -431,7 +431,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "27.06.2023"
+value "12.09.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -443,7 +443,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "11:37:49"
+value "08:29:15"
 )
 (vvPair
 variable "group"
@@ -471,7 +471,7 @@ value "$SCRATCH_DIR/Kart/Board/work"
 )
 (vvPair
 variable "mm"
-value "06"
+value "09"
 )
 (vvPair
 variable "module_name"
@@ -479,19 +479,19 @@ value "Kart_Board"
 )
 (vvPair
 variable "month"
-value "juin"
+value "sept."
 )
 (vvPair
 variable "month_long"
-value "juin"
+value "septembre"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\did-kart\\Prefs\\..\\Board\\hds\\@kart_@board\\struct.bd"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Board\\hds\\@kart_@board\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\did-kart\\Prefs\\..\\Board\\hds\\Kart_Board\\struct.bd"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Board\\hds\\Kart_Board\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -571,7 +571,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "11:37:49"
+value "08:29:15"
 )
 (vvPair
 variable "unit"
@@ -1166,7 +1166,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "19906,-5600,38006,-4400"
+xt "19906,-5600,38306,-4400"
 st "
 by %user on %dd %month %year
 "
@@ -11321,8 +11321,8 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-8,-8,1928,1048"
-viewArea "-33700,-14800,213836,119693"
+windowSize "0,0,1921,1048"
+viewArea "-33799,-14944,212506,118901"
 cachedDiagramExtent "-374000,-12000,200750,115000"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
@@ -11348,7 +11348,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-147000,-99000"
-lastUid 26102,0
+lastUid 26381,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

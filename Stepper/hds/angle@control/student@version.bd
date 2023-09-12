@@ -94,23 +94,23 @@ value " "
 )
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hdl"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Stepper\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Stepper\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds\\angle@control\\student@version.bd.info"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Stepper\\hds\\angle@control\\student@version.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds\\angle@control\\student@version.bd.user"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Stepper\\hds\\angle@control\\student@version.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Stepper\\hds"
 )
 (vvPair
 variable "appl"
@@ -130,15 +130,15 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds\\angle@control"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Stepper\\hds\\angle@control"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds\\angleControl"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Stepper\\hds\\angleControl"
 )
 (vvPair
 variable "date"
-value "22.08.2022"
+value "11.09.2023"
 )
 (vvPair
 variable "day"
@@ -150,7 +150,7 @@ value "lundi"
 )
 (vvPair
 variable "dd"
-value "22"
+value "11"
 )
 (vvPair
 variable "designName"
@@ -182,7 +182,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "22.08.2022"
+value "11.09.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -194,7 +194,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "13:26:23"
+value "16:10:01"
 )
 (vvPair
 variable "group"
@@ -222,7 +222,7 @@ value "$HDS_PROJECT_DIR/../Stepper/work"
 )
 (vvPair
 variable "mm"
-value "08"
+value "09"
 )
 (vvPair
 variable "module_name"
@@ -230,19 +230,19 @@ value "angleControl"
 )
 (vvPair
 variable "month"
-value "août"
+value "sept."
 )
 (vvPair
 variable "month_long"
-value "août"
+value "septembre"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds\\angle@control\\student@version.bd"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Stepper\\hds\\angle@control\\student@version.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\Stepper\\hds\\angleControl\\studentVersion.bd"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\Stepper\\hds\\angleControl\\studentVersion.bd"
 )
 (vvPair
 variable "package_name"
@@ -286,7 +286,7 @@ value "studentVersion"
 )
 (vvPair
 variable "time"
-value "13:26:23"
+value "16:10:01"
 )
 (vvPair
 variable "unit"
@@ -306,11 +306,11 @@ value "studentVersion"
 )
 (vvPair
 variable "year"
-value "2022"
+value "2023"
 )
 (vvPair
 variable "yy"
-value "22"
+value "23"
 )
 ]
 )
@@ -375,8 +375,7 @@ uid 22,0
 va (VaSet
 )
 xt "-1000,10400,11800,11600"
-st "clock      : std_uLogic
-"
+st "clock      : std_uLogic"
 )
 )
 *3 (PortIoIn
@@ -437,8 +436,7 @@ uid 36,0
 va (VaSet
 )
 xt "-1000,11600,12800,12800"
-st "clockwise  : std_uLogic
-"
+st "clockwise  : std_uLogic"
 )
 )
 *5 (PortIoIn
@@ -499,8 +497,7 @@ uid 50,0
 va (VaSet
 )
 xt "-1000,12800,12300,14000"
-st "enStep     : std_uLogic
-"
+st "enStep     : std_uLogic"
 )
 )
 *7 (PortIoIn
@@ -561,8 +558,7 @@ uid 64,0
 va (VaSet
 )
 xt "-1000,14000,11700,15200"
-st "reset      : std_uLogic
-"
+st "reset      : std_uLogic"
 )
 )
 *9 (PortIoIn
@@ -623,8 +619,7 @@ uid 78,0
 va (VaSet
 )
 xt "-1000,16400,12900,17600"
-st "sensorLeft : std_uLogic
-"
+st "sensorLeft : std_uLogic"
 )
 )
 *11 (PortIoIn
@@ -685,8 +680,7 @@ uid 92,0
 va (VaSet
 )
 xt "-1000,17600,13300,18800"
-st "stepperEnd : std_uLogic
-"
+st "stepperEnd : std_uLogic"
 )
 )
 *13 (PortIoIn
@@ -748,8 +742,7 @@ uid 106,0
 va (VaSet
 )
 xt "-1000,18800,25300,20000"
-st "target     : unsigned(angleBitNb-1 DOWNTO 0)
-"
+st "target     : unsigned(angleBitNb-1 DOWNTO 0)"
 )
 )
 *15 (PortIoOut
@@ -810,8 +803,7 @@ uid 120,0
 va (VaSet
 )
 xt "-1000,20000,25400,21200"
-st "actual     : unsigned(angleBitNb-1 DOWNTO 0)
-"
+st "actual     : unsigned(angleBitNb-1 DOWNTO 0)"
 )
 )
 *17 (PortIoOut
@@ -871,8 +863,7 @@ uid 134,0
 va (VaSet
 )
 xt "-1000,21200,11300,22400"
-st "coil1      : std_ulogic
-"
+st "coil1      : std_ulogic"
 )
 )
 *19 (PortIoOut
@@ -932,8 +923,7 @@ uid 148,0
 va (VaSet
 )
 xt "-1000,22400,11600,23600"
-st "coil2      : std_uLogic
-"
+st "coil2      : std_uLogic"
 )
 )
 *21 (PortIoOut
@@ -993,8 +983,7 @@ uid 162,0
 va (VaSet
 )
 xt "-1000,23600,11600,24800"
-st "coil3      : std_uLogic
-"
+st "coil3      : std_uLogic"
 )
 )
 *23 (PortIoOut
@@ -1054,8 +1043,7 @@ uid 176,0
 va (VaSet
 )
 xt "-1000,24800,11600,26000"
-st "coil4      : std_uLogic
-"
+st "coil4      : std_uLogic"
 )
 )
 *25 (PortIoOut
@@ -1115,8 +1103,7 @@ uid 190,0
 va (VaSet
 )
 xt "-1000,26000,12200,27200"
-st "reached    : std_ulogic
-"
+st "reached    : std_ulogic"
 )
 )
 *27 (Grouping
@@ -1203,7 +1190,7 @@ fg "0,0,32768"
 bg "0,0,32768"
 font "Verdana,8,0"
 )
-xt "50200,6500,64500,7500"
+xt "50200,6500,64800,7500"
 st "
 by %user on %dd %month %year
 "
@@ -1502,8 +1489,7 @@ uid 383,0
 va (VaSet
 )
 xt "-1000,15200,11600,16400"
-st "restart    : std_ulogic
-"
+st "restart    : std_ulogic"
 )
 )
 *40 (SaComponent
@@ -1754,8 +1740,7 @@ va (VaSet
 font "Verdana,8,0"
 )
 xt "95000,77000,112800,78000"
-st "dataBitNb = angleBitNb    ( positive )  
-"
+st "dataBitNb = angleBitNb    ( positive )  "
 )
 header ""
 )
@@ -2884,7 +2869,7 @@ on &39
 bg "65535,65535,65535"
 grid (Grid
 origin "0,0"
-isVisible 1
+isVisible 0
 isActive 1
 xSpacing 1000
 xySpacing 1000
@@ -2996,22 +2981,23 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "-8,-8,1928,1058"
-viewArea "-10689,-962,156695,90962"
+windowSize "-8,-8,1928,1040"
+viewArea "-4921,-2002,143467,77926"
 cachedDiagramExtent "-3000,0,128900,78000"
 pageSetupInfo (PageSetupInfo
 ptrCmd ""
 toPrinter 1
-xMargin 49
-yMargin 49
+xMargin 48
+yMargin 48
 paperWidth 761
 paperHeight 1077
 windowsPaperWidth 761
 windowsPaperHeight 1077
-paperType "A4"
-windowsPaperName "A4"
+paperType "A4 (210 x 297 mm)"
+windowsPaperName "A4 (210 x 297 mm)"
 windowsPaperType 9
 scale 50
+useAdjustTo 0
 exportedDirectories [
 "$HDS_PROJECT_DIR/HTMLExport"
 ]
@@ -3019,7 +3005,7 @@ boundaryWidth 0
 )
 hasePageBreakOrigin 1
 pageBreakOrigin "-3000,0"
-lastUid 628,0
+lastUid 667,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

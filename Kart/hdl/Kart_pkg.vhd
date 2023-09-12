@@ -193,6 +193,8 @@ PACKAGE Kart IS
   constant DC_prescalerBitNb : positive := 16;
   constant DC_speedBitNb : positive := 16;
   constant DC_pwmStepsBitNb : positive := 5; -- +- 15
+    -- Each tick rate [ms], the DC speed can do +-1 to reach the requested speed
+  constant DC_accelerationTickRateMS : positive := CLOCK_1MS_DIVIDER * 12;
 
 
   --------------------------------------------

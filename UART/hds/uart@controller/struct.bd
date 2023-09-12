@@ -50,23 +50,23 @@ VExpander (VariableExpander
 vvMap [
 (vvPair
 variable "HDLDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\UART\\hdl"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\UART\\hdl"
 )
 (vvPair
 variable "HDSDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\UART\\hds"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\UART\\hds"
 )
 (vvPair
 variable "SideDataDesignDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\UART\\hds\\uart@controller\\struct.bd.info"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\UART\\hds\\uart@controller\\struct.bd.info"
 )
 (vvPair
 variable "SideDataUserDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\UART\\hds\\uart@controller\\struct.bd.user"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\UART\\hds\\uart@controller\\struct.bd.user"
 )
 (vvPair
 variable "SourceDir"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\UART\\hds"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\UART\\hds"
 )
 (vvPair
 variable "appl"
@@ -86,15 +86,15 @@ value "%(unit)_%(view)_config"
 )
 (vvPair
 variable "d"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\UART\\hds\\uart@controller"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\UART\\hds\\uart@controller"
 )
 (vvPair
 variable "d_logical"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\UART\\hds\\uartController"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\UART\\hds\\uartController"
 )
 (vvPair
 variable "date"
-value "25.07.2022"
+value "11.09.2023"
 )
 (vvPair
 variable "day"
@@ -106,7 +106,7 @@ value "lundi"
 )
 (vvPair
 variable "dd"
-value "25"
+value "11"
 )
 (vvPair
 variable "entity_name"
@@ -134,7 +134,7 @@ value "axel.amand"
 )
 (vvPair
 variable "graphical_source_date"
-value "25.07.2022"
+value "11.09.2023"
 )
 (vvPair
 variable "graphical_source_group"
@@ -146,7 +146,7 @@ value "WE7860"
 )
 (vvPair
 variable "graphical_source_time"
-value "07:15:45"
+value "16:12:51"
 )
 (vvPair
 variable "group"
@@ -170,7 +170,7 @@ value "$HDS_PROJECT_DIR/../UART/work"
 )
 (vvPair
 variable "mm"
-value "07"
+value "09"
 )
 (vvPair
 variable "module_name"
@@ -178,19 +178,19 @@ value "uartController"
 )
 (vvPair
 variable "month"
-value "juil."
+value "sept."
 )
 (vvPair
 variable "month_long"
-value "juillet"
+value "septembre"
 )
 (vvPair
 variable "p"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\UART\\hds\\uart@controller\\struct.bd"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\UART\\hds\\uart@controller\\struct.bd"
 )
 (vvPair
 variable "p_logical"
-value "C:\\dev\\eln_kart_sodimm200\\Prefs\\..\\UART\\hds\\uartController\\struct.bd"
+value "C:\\dev\\DiD\\did-kart\\Prefs\\..\\UART\\hds\\uartController\\struct.bd"
 )
 (vvPair
 variable "package_name"
@@ -218,7 +218,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "07:15:45"
+value "16:12:51"
 )
 (vvPair
 variable "unit"
@@ -238,11 +238,11 @@ value "struct"
 )
 (vvPair
 variable "year"
-value "2022"
+value "2023"
 )
 (vvPair
 variable "yy"
-value "22"
+value "23"
 )
 ]
 )
@@ -2373,7 +2373,7 @@ on &3
 bg "65535,65535,65535"
 grid (Grid
 origin "0,0"
-isVisible 1
+isVisible 0
 isActive 1
 xSpacing 1000
 xySpacing 1000
@@ -2482,12 +2482,32 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,14,1921,1080"
-viewArea "-35000,3782,90282,73194"
+windowSize "-8,-8,1928,1040"
+viewArea "-897,-897,120540,64514"
 cachedDiagramExtent "0,0,63800,63400"
+pageSetupInfo (PageSetupInfo
+ptrCmd ""
+toPrinter 1
+xMargin 49
+yMargin 49
+paperWidth 761
+paperHeight 1077
+windowsPaperWidth 761
+windowsPaperHeight 1077
+paperType "A4 (210 x 297 mm)"
+windowsPaperName "A4 (210 x 297 mm)"
+windowsPaperType 9
+useAdjustTo 0
+exportedDirectories [
+"$HDS_PROJECT_DIR/HTMLExport"
+]
+boundaryWidth 0
+exportStdIncludeRefs 1
+exportStdPackageRefs 1
+)
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 1787,0
+lastUid 1814,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
