@@ -14,7 +14,6 @@ import pathlib
 from datetime import datetime
 from shutil import which
 
-
 VERSION = "1.1"
 MOD_AUTHOR = ""
 MOD_DESCR = ""
