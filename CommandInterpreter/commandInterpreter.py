@@ -1,16 +1,20 @@
 import os
+import glob
 import sys
+import subprocess
 from cmath import pi
 from time import time
 import tkinter as tk
 import tkinter.messagebox
+import tkinter.filedialog
 import serial
 import serial.tools.list_ports
 from threading import Thread
 import pathlib
 from datetime import datetime
+from shutil import which
 
-VERSION = "1.0"
+VERSION = "1.1"
 MOD_AUTHOR = ""
 MOD_DESCR = ""
 TITLE = "Summer School 1 - Kart UART Interpreter"
@@ -43,7 +47,7 @@ class UartHandler(serial.Serial, Thread):
             raise e
 
     def close_com(self):
-        if self.started:
+        if self.started and not self._terminated:
             self._terminated = True
             self.join()
         self.close()
@@ -542,9 +546,8 @@ class App(tk.Tk):
         self.menu.add_cascade(label="Serial", menu=self.port_menu)
         self.create_com_menu(self.port_menu)
         self.create_baud_menu(self.port_menu)
-        # Add about menu
         self.menu.add_command(label="About", command=self.about)
-        # Add exit menu
+        self.menu.add_command(label="OpenOCD", command=self.oocd_programming)
         self.menu.add_command(label="Exit", command=self.on_closing)
 
     def about(self):
@@ -552,6 +555,86 @@ class App(tk.Tk):
                                "Version: " + VERSION + "\n\n" + \
                                 ("Modded by: " + MOD_AUTHOR + "\n" + MOD_DESCR if MOD_AUTHOR != "" else \
                                 "Handles frames like:\n          0xAA|Addr|DataH|DataL|CRC8-itu\n\nDesigned for the EBS3 Summer School Kart testing"))
+    
+    def oocd_programming(self):
+        self.test_buttons_states(False)
+        self.menu.entryconfig("OpenOCD", state="disabled")
+        for c in self.tx_gridframe.winfo_children():
+            c.configure(state='disabled')
+        # Ask for Creg infos
+        ok = tk.messagebox.askokcancel('OpenOCD Programming','OpenOCD programming makes use of .svf files to reprogram the AGLN250 FPGAs used for the SS1.\nIt cannot generate them from bitfiles. Export them from Flashpro directly then click Ok.\nOnly one project *ERASE.svf, *PROGRAM.svf and *VERIFY.svf must be present in the folder.\nYou must have added the custom OOCD files to your installation.')
+        if ok:
+            path = tk.filedialog.askopenfilename(title='Select any SVF file (others are detected automatically)', parent = self, filetypes=[('SVF files','.svf')])
+            if path:
+                path = os.path.dirname(path)
+                efile = glob.glob(path + '/*ERASE.svf')
+                pfile = glob.glob(path + '/*PROGRAM.svf')
+                vfile = glob.glob(path + '/*VERIFY.svf')
+                if len(efile) == 0 or len(pfile) == 0 or len(vfile) == 0:
+                    tkinter.messagebox.showerror("SVF file(s) not found", "{}{}{} file(s) not found in given path.".format('*ERASE.svf' if len(efile) == 0 else '','*PROGRAM.svf' if len(pfile) == 0 else '','*VERIFY.svf' if len(vfile) == 0 else ''))
+                else:
+                    efile = efile[0].replace('\\','/')
+                    pfile = pfile[0].replace('\\','/')
+                    vfile = vfile[0].replace('\\','/')
+                    oocdpath = ''
+                    if which('openocd') is None:
+                        ok = tk.messagebox.askokcancel('OpenOCD not found in PATH','OpenOCD was not found in PATH.\nSelect the OpenOCD executable (usually in path/openocd/bin).')
+                        if ok:
+                            oocdpath = tk.filedialog.askopenfilename(title='Select OpenOCD executable',  parent = self)
+                    else:
+                        oocdpath = 'openocd'
+                    if oocdpath:
+                        stdo = ''
+                        stde = ''
+                        oocdcmd = oocdpath + ' -f target/igloo_agln250.cfg -f board/kart.cfg -c init -c \"svf -quiet {}\" -c \"svf -quiet {}\" -c \"svf -quiet {}\" -c shutdown'.format(efile, pfile, vfile)
+                        self.rx_text.insert(tk.END, 'Running OOCD command:\n' + oocdcmd + '\n\n', "green")
+                        process = subprocess.Popen(oocdcmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+                        stdlog = ''
+                        linebuffer=[]
+                        def procReader(proc, buffer):
+                            while True:
+                                line = proc.stdout.readline()
+                                if line == b'' and proc.poll() is not None:
+                                    break
+                                buffer.append(line)
+                        rthread = Thread(target=procReader, args=(process, linebuffer))
+                        rthread.daemon = True
+                        rthread.start()
+                        while rthread.is_alive():
+                            if linebuffer:
+                                line = linebuffer.pop(0)
+                                self.rx_text.insert(tk.END, line.decode())
+                                self.rx_text.see("end")
+                                stdlog += line.decode()
+                            self.update()
+                        
+                        # Update return value
+                        process.communicate()
+                        process.poll()
+                        stdlog = stdlog.strip()
+                        if process.returncode != 0:
+                            idx = stdlog.lower().find('error')
+                            if idx > 0:
+                                begidx = stdlog.rfind('\n', 0, idx)
+                                if begidx < 0:
+                                    begidx = 0
+                                err = stdlog[begidx:]
+                            else:
+                                idx = stdlog.lower().find('invalid')
+                                if idx > 0:
+                                    begidx = stdlog.rfind('\n', 0, idx)
+                                    if begidx < 0:
+                                        begidx = 0
+                                    err = stdlog[begidx:]
+                                else:
+                                    err = 'Could not parse error =>\n\n{}'.format(stdlog)
+                            tkinter.messagebox.showerror("Programming error", "An error happened while trying to program the board:\n\n{}".format(err))
+                        else:
+                            tkinter.messagebox.showinfo('FPGA programmed', 'Programming completed !')
+        for c in self.tx_gridframe.winfo_children():
+            c.configure(state='normal')
+        self.menu.entryconfig("OpenOCD", state="normal")
+        self.test_buttons_states(True)
 
     _com_init = False
     _com_list = None
