@@ -67,13 +67,13 @@ set_io  dc_B            -pinname 36     -fixed yes      -DIRECTION Output
 #
 
 # PM4_1
-set_io  {leds[1]}       -pinname 42     -fixed yes      -DIRECTION Output
+# set_io  PM4_1           -pinname 42     -fixed yes      -DIRECTION Input
 # PM4_2
-set_io  {leds[2]}       -pinname 43     -fixed yes      -DIRECTION Output
+# set_io  PM4_2           -pinname 43     -fixed yes      -DIRECTION Input
 # PM4_3
-set_io  {leds[3]}       -pinname 44     -fixed yes      -DIRECTION Output
+# set_io  PM4_3           -pinname 44     -fixed yes      -DIRECTION Input
 # PM4_4
-set_io  {leds[4]}       -pinname 45     -fixed yes      -DIRECTION Output
+# set_io  PM4_4           -pinname 45     -fixed yes      -DIRECTION Input
 # PM4_5
 set_io  coil1           -pinname 98     -fixed yes      -DIRECTION Output
 # PM4_6
