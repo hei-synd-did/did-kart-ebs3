@@ -75,8 +75,17 @@ BEGIN
           assert false
             report driverLine.all
             severity severityLevel;
-                                                         -- output a transaction
-        else
+        
+    		elsif command.all = "end_sim" then
+          if verbosity > 0 then
+            print(cr & cr & "================================");
+            print("================================");
+            print("Simulation end");
+            print("================================");
+            print("================================");
+          end if;
+    			exit;
+		    else
           driverTransaction <= pad(" ", driverTransaction'length);
           wait for 0 ns;
           driverTransaction <= pad(
